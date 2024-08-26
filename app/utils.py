@@ -1,11 +1,10 @@
 from typing import *
 import re
 import bs4
-import requests
 import asyncio
 import requests_async
 
-from music_api.config import ConfigRequest
+from app.config import ConfigRequest
 config = ConfigRequest()
 
 def extracting_urls_from_google_results(

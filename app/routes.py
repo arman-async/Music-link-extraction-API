@@ -2,9 +2,9 @@ import sys
 import asyncio
 import requests
 from flask import request, jsonify, redirect, url_for
-from music_api.utils import *
-from music_api.config import ConfigFlask 
-from music_api import app
+from app.utils import *
+from app.config import ConfigFlask 
+from app import app
 
 flask_config = ConfigFlask()
 

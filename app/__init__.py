@@ -1,7 +1,7 @@
 import logging
 from flask import Flask
 
-from music_api.config import ConfigFlask, ConfigApp
+from app.config import ConfigFlask, ConfigApp
 
 config_flask = ConfigFlask()
 config_app = ConfigApp()
@@ -23,3 +23,5 @@ app.logger.setLevel(logging.INFO)
 app.logger.setLevel(logging.DEBUG)
 
 logger = app.logger
+
+from app.routes import *
